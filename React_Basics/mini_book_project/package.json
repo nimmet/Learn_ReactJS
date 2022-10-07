@@ -1,22 +1,17 @@
 {
   "name": "mini_book_project",
   "version": "1.0.0",
-  "description": "first react app",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.2.2",
-    "fontawesome": "^5.6.3"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nimmet/Learn_ReactJS.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/nimmet/Learn_ReactJS/issues"
   },
