@@ -29,6 +29,11 @@ color:rgb(32, 107, 82);
 padding: 1rem;
 }
 
+.author {
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 1px cyan;
+}
+
 @media screen and (min-width: 768px) {
   .booklist {
       grid-template-columns: repeat(3, 1fr);

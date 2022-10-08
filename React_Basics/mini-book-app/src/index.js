@@ -3,26 +3,8 @@ import ReactDOM from 'react-dom';
 import {createRoot} from 'react-dom/client'
 
 import './App.css'
+import {books} from './books.js'
 
-const books = [
-  {
-    id:1,
-    title: "No Escape: The True Story of China's Genocide of the Uyghurs",
-author: "Nury Turkel",
-img: "https://m.media-amazon.com/images/I/71ojWEVRVaL._AC_UY436_FMwebp_QL65_.jpg"},
-
-{
-  id:2,
-  title: "Daddy? Daddy, when are you coming home?",
-author: "Leila Uyghur",
-img: "https://m.media-amazon.com/images/I/717u3nwdE5L._AC_UY436_FMwebp_QL65_.jpg"},
-
-{
-  id:3,
-  title: "The Backstreets: A Novel from Xinjiang",
-author: "Perhat Tursun and Darren Byler",
-img: "https://m.media-amazon.com/images/I/51F+wRzlKkL._AC_UY436_QL65_.jpg"}
-]
 
 function Booklist() {
   
@@ -31,7 +13,7 @@ function Booklist() {
     {
     books.map((book) => {
     {/* const {title,author,img} = book */}
-      return <Book key={book.id} {...book}/>
+      return <Book key={book.id} {...book} />
     })
     }
     </div>
@@ -41,12 +23,20 @@ function Booklist() {
 
 function Book(props){
   const {title,author,img} = props
+  // attribute, eventHandler
+  // onClick, onMouseOver
+const clickHandler = ()=> {
+  const buy = document.querySelector(`.buy${props.id}`)
+  buy.textContent = "Do you want to buy this book?"
+}
 return (
   <div className='book'>
   <img src={img} alt="" />
   <h2>{title}</h2>
+  {/* <h4 onMouseOver={()=>alert(`Author: ${author}`)}>{author}</h4> */}
   <h4>{author}</h4>
-
+  <div className={`buy${props.id}`}></div>
+  <button type='button' onClick={clickHandler}>Buy</button>
   </div>
 )
 }
