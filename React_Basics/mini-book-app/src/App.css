@@ -19,7 +19,7 @@ body {
 .book {
   background: white;
   padding: 1rem 2rem;
-  border-radius: 0.6rem;
+  border-radius: 0.6rem 2rem 2rem 0.1rem;
 }
 .book h2{
   padding: 0.5rem;
