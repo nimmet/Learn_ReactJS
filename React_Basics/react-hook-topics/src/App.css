@@ -52,14 +52,43 @@ body {
   
 }
 
+.item {
+  background: white;
+  text-transform:capitalize;
+  text-align: center;
+  margin: 1rem 3rem;
+  border-radius: 5px;
+  padding: 1px;
+  
+}
+
+.item h4 {
+  margin: 10px 1rem;
+  display: inline;
+}
+
 .btn {
-  display: block;
+  display: inline;
   background: #000;
   color:white;
   border-radius: 3px;
   border-width: 0;
   padding: 3px 5px;
   margin: 1rem auto;
+  text-transform: capitalize;
+
+  
+  
+}
+
+.item .btn {
+ background: transparent;
+  margin-left: 5rem;
+  color:#61dafb;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px green;
+  letter-spacing: 2px;
+
 }
 
 input {

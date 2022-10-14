@@ -1,12 +1,20 @@
 import React, { useReducer,useEffect,useRef } from 'react'
 
-const Modal = ()=> {
+const Modal = ({modalContent,closeModal})=> {
     
-
+useEffect(()=>{
+    setTimeout(()=>{
+        closeModal()
+    },3000)
+})
 
     return(
         <>
-        <h3 style={{textAlign:'center',color:"yellow"}}>Name Field Should Not Be Empty.</h3>
+        <div style={{textAlign:'center',color:"red",textTransform:'capitalize'}}>
+        <p>
+      {modalContent}
+        </p>
+        </div>
         </>
     )
 }
