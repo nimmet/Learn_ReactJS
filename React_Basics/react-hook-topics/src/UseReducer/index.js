@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from 'react'
+import React, { useEffect, useReducer, useState,useRef } from 'react'
 import Modal from './modal'
 import { data } from '../data'
 import {reducer} from './reducer'
@@ -16,9 +16,16 @@ const Index = ()=> {
 
 const [name,setName] = useState("")
 const [state,dispatch] = useReducer(reducer,defaultState)
+const inputContainer = useRef(null)
+
 // const [people,setPeople] = useState(data)
 // const [showModal,setShowModal] = useState(false)
 
+
+useEffect(()=>{
+    inputContainer.current.focus()
+}
+)
 const handleSubmit= (e)=>{
 e.preventDefault()
 if(name){
@@ -49,6 +56,7 @@ const handleChange = (e)=>{
             <div>
                 <input type="text" value={name} 
                     onChange={handleChange}
+                    ref={inputContainer}
                 />
             </div>
             <button type='submit' className='btn'>Add</button>
