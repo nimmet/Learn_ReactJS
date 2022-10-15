@@ -83,6 +83,12 @@ body {
 
 }
 
+.item .btn:is(:hover,:focus){
+background: #d61a48;
+outline: 2px solid #d61a48;
+outline-offset: 2px;
+}
+
 .item .btn {
  background: transparent;
   color:#61dafb;

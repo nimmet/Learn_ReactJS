@@ -39,14 +39,23 @@ class Monster extends Component {
     render(){
        
         return (
-            <div className="container">
+            <div className="App">
+            <input type="text" className="search-box" 
+                placeholder='search monsters'
+                onChange={(e)=>{
+
+                const filteredMonster = this.state.monsters.filter((monster)=> monster.name.toLowerCase().includes(e.target.value.toLowerCase())
+                )
+                this.setState(()=>{
+        return {monsters:filteredMonster}
+        })
+                }}
+            />
                {
                 this.state.monsters.map((monster,index)=>{
                 return (
-                    <div className='item' style={{paddingLeft:'2rem',paddingRight:'2rem'}} key={index}>
-                    <h1>{index}</h1>
+                    <div key={index}>
                 <h1>{monster.name}</h1>
-               
                     </div>
                  
                 )
