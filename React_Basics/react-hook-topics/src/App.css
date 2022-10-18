@@ -104,6 +104,16 @@ outline-offset: 2px;
 
 }
 
+.item img {
+  margin: 5px 2px;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 5px;
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
 input {
   background: rgb(185, 207, 209);
   border-width: 0;

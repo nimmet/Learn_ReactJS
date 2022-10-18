@@ -1,4 +1,6 @@
 import './App.css';
+import Example from './Custom-Hooks/CustomHooks';
+import CustomHooks from './Custom-Hooks/CustomHooks1';
 import Monster from './Monster-Rolodex/Monsters';
 // import MultipleInputs from './Multiple_Inputs/MultipleInputExample';
 // import UseRefBasics from './UseRefBasics/UseRefBasics';
@@ -13,7 +15,9 @@ function App() {
     // <Index />
     // <PropDrilling/>
     // <Monster />
-    <ContextAPI/>
+    // <ContextAPI/>
+    // <Example /> //Custom hooks example which demonstrates products with item name,price,company and images
+    <CustomHooks />
   );
 }
 
