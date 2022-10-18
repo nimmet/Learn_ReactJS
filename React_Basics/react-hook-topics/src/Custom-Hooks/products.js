@@ -10,7 +10,7 @@ const Products = ({products})=>  {
         return (
             <div className='item' key={id}>
             <img src={url} alt="" />
-        <h3>{fields.company}</h3>
+        <h3>{fields.company.toUpperCase()}</h3>
        <h3>{fields.name}</h3>
        <h3>{fields.color}</h3>
         <h3>{fields.price}</h3>
