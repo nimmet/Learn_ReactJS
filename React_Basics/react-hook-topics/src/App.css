@@ -55,6 +55,7 @@ body {
   margin: 4rem 3rem;
   border-radius: 5px;
   padding: 1rem;
+ 
   
 }
 
@@ -67,9 +68,7 @@ body {
   padding: 2px;
   display: flex;
   justify-content: space-between;
-  
-
-  
+ 
 }
 
 .item h4 {
