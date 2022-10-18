@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 
+
 const Products = ({products})=>  {
     return (
     products.map((product)=>{
@@ -8,6 +9,7 @@ const Products = ({products})=>  {
         const {url} = urlData[0]
         console.log(url)
         return (
+           
             <div className='item' key={id}>
             <img src={url} alt="" />
         <h3>{fields.company.toUpperCase()}</h3>
@@ -15,6 +17,7 @@ const Products = ({products})=>  {
        <h3>{fields.color}</h3>
         <h3>{fields.price}</h3>
             </div>
+          
         )
     })
     )

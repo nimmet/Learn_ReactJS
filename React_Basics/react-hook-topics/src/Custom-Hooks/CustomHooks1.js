@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
-import Products from './products'
 import { useFetch } from './useFetch'
+import Product from './product'
 
 
 const url = 'https://course-api.com/javascript-store-products'
@@ -11,8 +11,15 @@ const CustomHooks = ()=> {
 
     return (
         <div>
-            <h2>{loading? 'loading...':'data'}</h2>
-           <Products products={products} />
+            <h2>Products</h2>
+            {
+                products.map((product) => {
+                    const {id, fields} = product
+                    return <Product key={id} {...fields}/>
+                  
+                })
+            }
+          
 
         </div>
     )
