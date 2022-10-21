@@ -2,6 +2,7 @@ import './App.css';
 // import Example from './Custom-Hooks/CustomHooks';
 // import CustomHooks from './Custom-Hooks/CustomHooks1';
 import ReactMemo from './Custom-Hooks/reactMemo';
+import TestCss from './TailwindDemo/TestTailwind';
 // import Monster from './Monster-Rolodex/Monsters';
 // import MultipleInputs from './Multiple_Inputs/MultipleInputExample';
 // import UseRefBasics from './UseRefBasics/UseRefBasics';
@@ -20,7 +21,11 @@ function App() {
     // <Example /> //Custom hooks example which demonstrates products with item name,price,company and images
     // <CustomHooks />
 
-    <ReactMemo />
+    // <ReactMemo />
+  
+      <TestCss />
+  
+    
   );
 }
 
