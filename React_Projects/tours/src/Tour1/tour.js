@@ -42,7 +42,12 @@ const Tour = ({id,image,info,price,name})=>{
                     <p className='text-left my-6 mx-5 tracking-wide'>{
                         readMore ? info : `${info.substring(0,200)}...` 
                       } {<button className=' text-sky-400' onClick={()=>{
-                          setReadMore(true)
+                        if(readMore === false){
+                            setReadMore(true)
+                        } else{
+                            setReadMore(false)
+                        }
+                         
                       }}>Read More</button>}</p>
                     
                     <button className=' rounded-md capitalize text-red-600 border border-red-900  font-medium bg-white px-5 mx-auto my-5 text-center' onClick={handleNotInterested(id)}>not interested</button>
