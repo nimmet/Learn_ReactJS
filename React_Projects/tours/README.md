@@ -5,7 +5,7 @@
 ![Profile Card](./React_Projects/birthday_reminder/src/asset/images/birthday-reminder.jpg)
 
 * Tour App
-![Profile Card](./React_Projects/birthday_reminder/src/asset/images/tour.jpg)
+![Profile Card](./React_Projects/birthday_reminder/src/asset/images/tours.jpg)
 
 * Review App
 ![Profile Card](./React_Projects/birthday_reminder/src/asset/images/review.jpg)
