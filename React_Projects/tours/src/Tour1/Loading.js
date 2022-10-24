@@ -9,7 +9,10 @@ const Loading = ()=>{
     const [data,setData] = useState([])
     
    
-
+    const removeTour = (id)=>{
+        const newData = data.filter((d)=> d.id !== id)
+        setData(newData)
+    }
    
 
 
@@ -27,7 +30,14 @@ useEffect(()=>{
 },[])
     
 
-
+    if(data.length===0){
+        return(
+            <div className=' text-center'>
+                <h2 className=' text-red-400 capitalize  font-bold my-8'>No Tours Left</h2>
+                <button className='rounded-md bg-sky-400 text-red-800 border px-5 py-1 my-5 capitalize' onClick={getData}>refresh</button>
+            </div>
+        )
+    }
 
 
    
@@ -42,7 +52,7 @@ useEffect(()=>{
         
            { 
             data.map((tour,index)=>{
-                return <Tour key={tour.id} {...tour}/>
+                return <Tour key={tour.id} {...tour} removeTour={removeTour}/>
             })
             }
         
