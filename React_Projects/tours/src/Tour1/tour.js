@@ -1,37 +1,36 @@
 import React, { useState } from 'react'
 
-const Tour = ({tourdata,setData})=>{
+const Tour = ({id,image,info,price,name})=>{
 
-    const [readMore,setReadMore] = useState(true)
+    const [readMore,setReadMore] = useState(false)
 
-    const processInfo = (info)=>{
+    // const processInfo = (info)=>{
         
-        let count = 105
-        const infoAr = info.split('')
-        let text =''
-        if(!readMore){
-            return info
-        }else{
+    //     let count = 180
+    //     const infoAr = info.split('')
+    //     let text =''
+    //     if(!readMore){
+    //         return info
+    //     }else{
            
-            for(let i=0; i<count; i++){
-                text +=infoAr[i]
-            }
+    //         for(let i=0; i<count; i++){
+    //             text +=infoAr[i]
+    //         }
             
-            return text+'...'
-        }
+    //         return text+'...'
+    //     }
 
        
-    }
+    // }
 
     const handleNotInterested = (id)=>{
         
     }
 
     return(
-        tourdata.map((tour,index)=>{
-            const {id,name,info,image,price} = tour
-                    return ( <div key={id} 
-                    className='mx-auto my-5 bg-white rounded-md w-4/6'>
+       
+            <div key={id} 
+                    className='mx-auto my-5 bg-white rounded-md w-[550px]'>
                     <img 
                     className=' w-full rounded-t-md h-64 mx-auto my-5'
                     src={image} alt="" />
@@ -41,16 +40,16 @@ const Tour = ({tourdata,setData})=>{
                     </div>
                     
                     <p className='text-left my-6 mx-5 tracking-wide'>{
-                        readMore ? processInfo(info) : info
+                        readMore ? info : `${info.substring(0,200)}...` 
                       } {<button className=' text-sky-400' onClick={()=>{
-                          setReadMore(false)
+                          setReadMore(true)
                       }}>Read More</button>}</p>
                     
-                    <button className=' rounded-md capitalize text-red-600 border border-red-900  font-medium bg-white px-5 my-5' onClick={handleNotInterested(id)}>not interested</button>
+                    <button className=' rounded-md capitalize text-red-600 border border-red-900  font-medium bg-white px-5 mx-auto my-5 text-center' onClick={handleNotInterested(id)}>not interested</button>
                     </div>
-                    )
-                })
+               
     )
+                    
 }
 
 export default Tour

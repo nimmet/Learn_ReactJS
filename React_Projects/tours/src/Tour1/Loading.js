@@ -34,13 +34,20 @@ useEffect(()=>{
   
 
     return (
-        <div>
-        <div className=' text-center '>
+        <div className='mx-auto my-5'>
+        <div className=' text-center mx-auto my-5'>
         <h1 className='font-bold capitalize'>Our Tours</h1>
         <div className=' w-10 bg-blue-400 h-0.5 mt-0.5 mx-auto mb-5'></div>
         </div>
+        
+           { 
+            data.map((tour,index)=>{
+                return <Tour key={tour.id} {...tour}/>
+            })
+            }
+        
 
-      {<Tour tourdata={data} setData={setData}/>}
+      
         </div>
         
     )
