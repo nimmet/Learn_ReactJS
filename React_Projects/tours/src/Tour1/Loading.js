@@ -40,7 +40,7 @@ useEffect(()=>{
         <div className=' w-10 bg-blue-400 h-0.5 mt-0.5 mx-auto mb-5'></div>
         </div>
 
-      {<Tour tourdata={data}/>}
+      {<Tour tourdata={data} setData={setData}/>}
         </div>
         
     )
