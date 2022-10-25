@@ -12,3 +12,7 @@
 * Review App
 ![Profile Card](./React_Projects/birthday_reminder/src/asset/images/review.jpg)
 
+* Accordion
+** project from Jogn Smilga but coded by me **
+![Profile Card](./React_Projects/birthday_reminder/src/asset/images/accordion.jpg)
+
