@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import Menu from './Menu/Menu';
+// import App from './App';
 // import App from './Tour2/App';
+// import App from './Reviews/App'
+// import App from './Accordion/App';
+// import App from './Menu/App'
+import App from './Tabs/App'
+// import App from './Slide/App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>
 );
 
