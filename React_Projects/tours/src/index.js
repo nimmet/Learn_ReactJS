@@ -7,8 +7,9 @@ import './index.css';
 // import App from './Reviews/App'
 // import App from './Accordion/App';
 // import App from './Menu/App'
-import App from './Tabs/App'
+// import App from './Tabs/App'
 // import App from './Slide/App'
+import App from './Lorem-Ipsum/App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

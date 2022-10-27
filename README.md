@@ -27,3 +27,7 @@
 * Slide
 ** project from Jogn Smilga but coded by me **
 ![Menu](./React_Projects/birthday_reminder/src/asset/images/slide.jpg)
+
+* Lorem Ipsum
+** project from Jogn Smilga but coded by me **
+![Menu](./React_Projects/birthday_reminder/src/asset/images/lorem.jpg)
