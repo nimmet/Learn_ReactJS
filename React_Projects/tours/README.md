@@ -40,3 +40,8 @@
 ** project from Jogn Smilga but coded by me **
 ![Menu](./React_Projects/birthday_reminder/src/asset/images/navbar.jpg)
 
+* Side-Modal
+** project from Jogn Smilga but coded by me **
+![Menu](./React_Projects/birthday_reminder/src/asset/images/side-modal.jpg)
+
+
