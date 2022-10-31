@@ -9,7 +9,10 @@ import './index.css';
 // import App from './Menu/App'
 // import App from './Tabs/App'
 // import App from './Slide/App'
-import App from './Lorem-Ipsum/App'
+// import App from './Lorem-Ipsum/App'
+// import App from './Grocery-Bud/App'
+// import App from './Navbar/App'
+import App from './Sidebar-Modal/App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
