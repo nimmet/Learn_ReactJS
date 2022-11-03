@@ -18,7 +18,7 @@ const defaultFormFields = {
 
 }
 
-const SignUpForm = () => {
+const SignUpForm = ({signInWithGoogle}) => {
 
     const [formFields, setFormFields] = useState(defaultFormFields)
     const {displayName, email, password,confirmPassword} = formFields
@@ -84,8 +84,10 @@ const SignUpForm = () => {
             <FormInput label="Confirm Password" required type='password' onChange={handleChange} name="confirmPassword" value={confirmPassword} />
 
         
-
+<div>
             <Button type='submit'>Sign Up</Button>
+          
+</div>
 
         </form>
     </div>
