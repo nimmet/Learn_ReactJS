@@ -5,15 +5,7 @@ import Homepage
 import { Routes,Route,Outlet } from 'react-router-dom'
 import Navigation from './routes/navigation/navigation.component';
 import Authentication from './routes/authentication/authentication.component';
-
-const Shop = ()=> {
-  return (
-    <div className="">
-      <h1>I am the shop page</h1>
-        </div>
-  )
-}
-
+import Shop from './routes/shop/shop.component';
 
 
 function App() {
