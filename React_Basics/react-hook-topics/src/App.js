@@ -1,9 +1,11 @@
-import './App.css';
-import ContextExample from './ContextExample/ContextExample';
+// import './App.css';
+// import ContextExample from './ContextExample/ContextExample';
 // import Example from './Custom-Hooks/CustomHooks';
 // import CustomHooks from './Custom-Hooks/CustomHooks1';
+import './DarkTheme/theme.css'
 import ReactMemo from './Custom-Hooks/reactMemo';
-import TestCss from './TailwindDemo/TestTailwind';
+import Theme from './DarkTheme/Theme';
+// import TestCss from './TailwindDemo/TestTailwind';
 // import Monster from './Monster-Rolodex/Monsters';
 // import MultipleInputs from './Multiple_Inputs/MultipleInputExample';
 // import UseRefBasics from './UseRefBasics/UseRefBasics';
@@ -26,9 +28,9 @@ function App() {
   
 // {/* <TestCss /> */}
 
-<ContextExample />
+/* <ContextExample /> */
   
-      
+      <Theme />
   
     
   );
