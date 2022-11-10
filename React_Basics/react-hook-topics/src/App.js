@@ -1,4 +1,5 @@
 import './App.css';
+import ContextExample from './ContextExample/ContextExample';
 // import Example from './Custom-Hooks/CustomHooks';
 // import CustomHooks from './Custom-Hooks/CustomHooks1';
 import ReactMemo from './Custom-Hooks/reactMemo';
@@ -23,7 +24,9 @@ function App() {
 
     // <ReactMemo />
   
-<TestCss />
+// {/* <TestCss /> */}
+
+<ContextExample />
   
       
   
