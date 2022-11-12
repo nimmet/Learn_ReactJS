@@ -8,8 +8,11 @@ const Product = ({id,title,category,image,price,rating} ) => {
     // const {id,title,category,image,price,rating}  = {...product}
 
   return (
-    <div className='flex flex-col justify-center items-start w-[250px] px-5 py-2 border border-gray-500 rounded-md gap-1 '>
-        <img src={image} alt={id} width="200" className=' h-[250px]  my-5 mx-auto' />
+    <div className='flex flex-col justify-center items-start w-[250px] px-5 py-2 border border-gray-500 rounded-md gap-1'>
+    <div className=' overflow-hidden'>
+
+        <img src={image} alt={id}  className=' h-[250px] w-[200px] my-5 mx-auto hover:scale-125  transition-all ease-in-out' />
+    </div>
         <h1>{category}</h1>
         <h1 className=''>{title.substring(0,25)}</h1>
         <h1>{price}</h1>
