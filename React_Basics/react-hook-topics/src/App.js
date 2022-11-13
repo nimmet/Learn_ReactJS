@@ -8,6 +8,7 @@ import Theme from './DarkTheme/Theme';
 import ReducerExample from './UseReducerExample/ReducerExample';
 import Product from './ShoppingExample/Products/product.component';
 import Shopping from './ShoppingExample/shopping/shopping';
+import Home from './ShoppingExample/component/Home';
 // import TestCss from './TailwindDemo/TestTailwind';
 // import Monster from './Monster-Rolodex/Monsters';
 // import MultipleInputs from './Multiple_Inputs/MultipleInputExample';
@@ -35,7 +36,8 @@ function App() {
   
    //   <Theme />
   // <ReducerExample />
-  <Shopping />
+   <Shopping />
+  
     
   );
 }
