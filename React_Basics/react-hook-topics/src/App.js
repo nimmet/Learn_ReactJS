@@ -9,6 +9,9 @@ import ReducerExample from './UseReducerExample/ReducerExample';
 import Product from './ShoppingExample/Products/product.component';
 import Shopping from './ShoppingExample/shopping/shopping';
 import Home from './ShoppingExample/component/Home';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { divide } from 'fontawesome';
+import CartItem from './ShoppingExample/component/cartItem.component';
 // import TestCss from './TailwindDemo/TestTailwind';
 // import Monster from './Monster-Rolodex/Monsters';
 // import MultipleInputs from './Multiple_Inputs/MultipleInputExample';
@@ -36,8 +39,14 @@ function App() {
   
    //   <Theme />
   // <ReducerExample />
-   <Shopping />
-  
+  // <Shopping />
+  //<Home/>
+  <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<Shopping/>} />
+    <Route path="cart" element={<CartItem/>}/>
+    </Routes>
+  </BrowserRouter>
     
   );
 }
