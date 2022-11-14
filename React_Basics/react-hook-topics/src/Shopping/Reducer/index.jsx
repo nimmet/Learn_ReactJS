@@ -30,10 +30,22 @@ const CartReducer = (state, action) => {
       console.log(checkIndexOfCurrentItem,updateCartItems);
 
     case REMOVE_FROM_CART:
-      console.log("===================================");
-      console.log("remove from cart is called");
-      console.log("===================================");
+      const {currentIdToBeDeleted,typeOfDelete} = action
+      let updateCartItemsAfterDelete = [...state.cartItems]
 
+      if(typeOfDelete=== 'partial'){
+        const indexOfCurrentItemToBeDeleted = updateCartItemsAfterDelete.findIndex(item=> item.id===currentIdToBeDeleted)
+        updateCartItemsAfterDelete[indexOfCurrentItemToBeDeleted] = {
+            ...updateCartItemsAfterDelete[indexOfCurrentItemToBeDeleted].quantity-1,
+        }
+      }else{
+        updateCartItemsAfterDelete = updateCartItemsAfterDelete.filter(item=> item.id !== currentIdToBeDeleted.id)
+      }
+
+      return {
+        ...state,
+        cartItems: updateCartItemsAfterDelete
+      }
     default:
       return state;
   }

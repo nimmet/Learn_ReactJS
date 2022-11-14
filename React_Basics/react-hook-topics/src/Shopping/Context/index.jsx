@@ -17,8 +17,8 @@ const CartState = ({children})=> {
         dispatch({type: 'ADD_TO_CART', currentProductItem: currentProductItem})
     }
 
-    const removeFromCart = (currentProductItem) => {
-        dispatch({type: 'REMOVE_FROM_CART', currentProductItem: currentProductItem.filter((item)=> item.id !== currentProductItem.id)})
+    const removeFromCart = (currentIdToBeDeleted,typeOfDelete) => {
+        dispatch({type: 'REMOVE_FROM_CART', currentIdToBeDeleted: typeOfDelete})
     }
 
 
