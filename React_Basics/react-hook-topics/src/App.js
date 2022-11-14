@@ -12,6 +12,7 @@ import Home from './ShoppingExample/component/Home';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import { divide } from 'fontawesome';
 import CartItem from './ShoppingExample/component/cartItem.component';
+import Navbar from './ShoppingExample/navigation/navbar.component';
 // import TestCss from './TailwindDemo/TestTailwind';
 // import Monster from './Monster-Rolodex/Monsters';
 // import MultipleInputs from './Multiple_Inputs/MultipleInputExample';
@@ -42,6 +43,7 @@ function App() {
   // <Shopping />
   //<Home/>
   <BrowserRouter>
+  <Navbar/>
     <Routes>
     <Route path="/" element={<Shopping/>} />
     <Route path="cart" element={<CartItem/>}/>

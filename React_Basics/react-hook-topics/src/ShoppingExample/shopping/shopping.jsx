@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter, Outlet, Routes } from 'react-router-dom'
 import CartItem from '../component/cartItem.component'
 import { CartContextProvider } from '../context/cart.context'
 import { ProductContextProvider } from '../context/product.context'
@@ -14,7 +14,8 @@ const Shopping = () => {
     
         <ProductContextProvider>
     
-        <Navbar />
+        {/* <Navbar /> */}
+       
             <ProductList/>
             <CartContextProvider>
               <CartItem/>
