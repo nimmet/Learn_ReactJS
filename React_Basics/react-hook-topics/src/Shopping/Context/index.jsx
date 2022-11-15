@@ -18,7 +18,7 @@ const CartState = ({children})=> {
     }
 
     const removeFromCart = (currentIdToBeDeleted,typeOfDelete) => {
-        dispatch({type: 'REMOVE_FROM_CART', currentIdToBeDeleted: typeOfDelete})
+        dispatch({type: 'REMOVE_FROM_CART', currentIdToBeDeleted, typeOfDelete})
     }
 
 

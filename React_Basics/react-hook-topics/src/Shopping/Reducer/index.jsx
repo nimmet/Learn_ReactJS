@@ -36,10 +36,11 @@ const CartReducer = (state, action) => {
       if(typeOfDelete=== 'partial'){
         const indexOfCurrentItemToBeDeleted = updateCartItemsAfterDelete.findIndex(item=> item.id===currentIdToBeDeleted)
         updateCartItemsAfterDelete[indexOfCurrentItemToBeDeleted] = {
-            ...updateCartItemsAfterDelete[indexOfCurrentItemToBeDeleted].quantity-1,
+            ...updateCartItemsAfterDelete[indexOfCurrentItemToBeDeleted],
+            quantity:updateCartItemsAfterDelete[indexOfCurrentItemToBeDeleted].quantity-1,
         }
       }else{
-        updateCartItemsAfterDelete = updateCartItemsAfterDelete.filter(item=> item.id !== currentIdToBeDeleted.id)
+        updateCartItemsAfterDelete = updateCartItemsAfterDelete.filter(item=> item.id !== currentIdToBeDeleted)
       }
 
       return {
