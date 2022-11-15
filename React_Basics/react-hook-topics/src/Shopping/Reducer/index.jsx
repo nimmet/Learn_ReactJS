@@ -6,7 +6,6 @@ const CartReducer = (state, action) => {
       const { cartItems } = state;
       const { currentProductItem } = action;
       let updateCartItems = [...cartItems];
-      console.log(updateCartItems);
 
       const checkIndexOfCurrentItem  = updateCartItems.findIndex(item=> item.id === currentProductItem.id)
       if(checkIndexOfCurrentItem===-1){
@@ -27,7 +26,6 @@ const CartReducer = (state, action) => {
         cartItems: updateCartItems
       }
 
-      console.log(checkIndexOfCurrentItem,updateCartItems);
 
     case REMOVE_FROM_CART:
       const {currentIdToBeDeleted,typeOfDelete} = action

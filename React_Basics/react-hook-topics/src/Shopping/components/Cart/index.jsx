@@ -6,20 +6,14 @@ import { BiPlus,BiMinus } from "react-icons/bi";
 const Cart = () => {
   const { cartItems, addToCart,removeFromCart } = useContext(CartContext);
 
-  console.log(cartItems);
-
-  const handleDelete = (id)=>{
-   
-         cartItems.filter((it)=> it.id !== id)
-    
-}
-
+  let totalQuantity = 0
+ 
   return (
     <div className=" ">
     {!cartItems.length && <div className="text-center font-bold text-2xl mt-5 ">Cart is empty</div>}
       {cartItems.map((item) => {
         const { id, category, price, title, rating, image,quantity } = item;
-
+        totalQuantity += category
         return (
           <div key={id} className=" flex gap-5 justify-center my-5 items-center bg-sky-200/20  ">
         
