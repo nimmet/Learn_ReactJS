@@ -18,6 +18,7 @@ const ProductList = () => {
 
     },[])
   return (
+    <>
     <div className='flex flex-row flex-wrap justify-center  gap-4 mx-24'> 
     {
       isLoading ? <div>Fetching data! Pleaes wait </div> : 
@@ -26,6 +27,11 @@ const ProductList = () => {
       ))
     }
     </div>
+
+    <footer className=' bg-gradient-to-r from-slate-500 to-slate-600  bottom-0 z-10 h-[64px] text-center py-5 text-xl text-white font-bold italic tracking-wider'>
+   Shopping Cart App 2022
+</footer>
+    </>
   )
 }
 

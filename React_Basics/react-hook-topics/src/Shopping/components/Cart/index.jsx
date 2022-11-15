@@ -6,14 +6,15 @@ import { BiPlus,BiMinus } from "react-icons/bi";
 const Cart = () => {
   const { cartItems, addToCart,removeFromCart } = useContext(CartContext);
 
-  let totalQuantity = 0
- 
+  let totalAmount = 0
+  
   return (
     <div className=" ">
     {!cartItems.length && <div className="text-center font-bold text-2xl mt-5 ">Cart is empty</div>}
       {cartItems.map((item) => {
         const { id, category, price, title, rating, image,quantity } = item;
-        totalQuantity += category
+       
+       totalAmount = totalAmount + price * quantity
         return (
           <div key={id} className=" flex gap-5 justify-center my-5 items-center bg-sky-200/20  ">
         
@@ -34,6 +35,10 @@ const Cart = () => {
           </div>
         );
       })}
+
+      {
+        totalAmount ? <div className=" flex justify-end mr-28 mt-10 font-bold tracking-wider text-xl text-zinc-700">Total: {Math.round(totalAmount)}$ </div> : ''
+      }
     </div>
   );
 };
