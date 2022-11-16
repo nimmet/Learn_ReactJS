@@ -8,11 +8,15 @@ import CartState from './Shopping/Context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
+
+  {/* <BrowserRouter>
+  // Shopping App Router settings
   <CartState>
     <App />
   </CartState>
-  </BrowserRouter>
+  </BrowserRouter> */}
+
+  <App/>
   </React.StrictMode>
 );
 

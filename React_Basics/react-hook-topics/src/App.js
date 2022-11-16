@@ -16,6 +16,7 @@ import Navbar from './ShoppingExample/navigation/navbar.component';
 import Nav from './Shopping/components/Nav';
 import ProductList from './Shopping/ProductList';
 import Cart from './Shopping/components/Cart';
+import LoginMain from './LoginApp/Components/LoginMain';
 // import TestCss from './TailwindDemo/TestTailwind';
 // import Monster from './Monster-Rolodex/Monsters';
 // import MultipleInputs from './Multiple_Inputs/MultipleInputExample';
@@ -58,11 +59,14 @@ function App() {
 
   <div>
 
+{/* // for Shopping app 
     <Nav/>
     <Routes>
       <Route path="/" element={<ProductList/>} />
       <Route path="/cart" element={<Cart/>} />
-    </Routes>
+    </Routes> */}
+
+    <LoginMain />
   </div>
     
   );
