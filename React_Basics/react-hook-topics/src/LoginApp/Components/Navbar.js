@@ -10,7 +10,6 @@ const Navbar = () => {
     <li>Login</li>
 </ul>
         </nav>
-        <Login/>
     </div>
   )
 }
